@@ -2,7 +2,7 @@ Gusto
 
 Note: api.gusto.local domain is my local domain. Please configure your local domain.
 
-1. Application has been created using Symfony framework version 3.4 (https://symfony.com/).
+1. Application has been created using Symfony framework version 3.4 (https://symfony.com/). Run 'composer install' to install dependencies.
 2. To run local server use: php bin/console server:start, as escribed on https://symfony.com/doc/3.4/setup.html#running-the-symfony-application
 3. API usage:
 
@@ -14,12 +14,12 @@ Note: api.gusto.local domain is my local domain. Please configure your local dom
   "title": "New title 1"
   }
 
-4. Ryn tests (tests/AppBundle/Controller):
+4. Run tests (tests/AppBundle/Controller):
 
 - ./vendor/bin/simple-phpunit
 
-4. Code structure: all API endpoints are loocated in DefaultController.php (https://github.com/strabek/gusto/blob/master/src/AppBundle/Controller/DefaultController.php)
-5. List of missing functional requirements:
+5. Code structure: all API endpoints are loocated in DefaultController.php (https://github.com/strabek/gusto/blob/master/src/AppBundle/Controller/DefaultController.php)
+6. List of missing functional requirements:
 
 - paging - not enough time
 
