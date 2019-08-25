@@ -27,6 +27,13 @@ class DefaultControllerTest extends WebTestCase
 		    $result->getHeader('Content-Type')[0],
 		    '"Content-Type" header should be "application/json"'
 		);
+
+        $content = json_decode($result->getBody()->getContents());
+		
+		$this->assertTrue(
+		    is_array($content),
+		    'Respnse content should be of array type'
+		);
     }
 
     public function testRecipeByCusineIndex()
@@ -47,7 +54,7 @@ class DefaultControllerTest extends WebTestCase
         $this->assertEquals(
 		    'application/json',
 		    $result->getHeader('Content-Type')[0],
-		    '"Content-Type" header should be "application/json"'
+		    '"Content-Type" header should be of type "application/json"'
         );
 
         $content = json_decode($result->getBody()->getContents());

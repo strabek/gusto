@@ -26,7 +26,10 @@ Note: api.gusto.local domain is my local domain. Please configure your local dom
 Possible improvements/functionality:
 
 1. Use of database
-2. Frint-end UI
+2. Front-end UI
+3. Move private functions to services to make controller code cleaner
+4. For paging I would use KnpPaginatorBundle bundle (https://packagist.org/packages/knplabs/knp-paginator-bundle)
+5. I would add authorisation
 
 Anything else you think is relevant to your solution
 
