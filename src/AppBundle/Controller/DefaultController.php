@@ -77,6 +77,9 @@ class DefaultController extends Controller
             }
         }
 
+        // Update updated_at field
+        $filtered['updated_at'] = date('d/m/Y h:i:s');
+
         $data[$csvKey[0]] = $filtered;
 
         $serializer = new Serializer([new ObjectNormalizer()], [new CsvEncoder()]);
